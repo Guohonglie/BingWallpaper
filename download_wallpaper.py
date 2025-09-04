@@ -54,7 +54,7 @@ def download_image(image_url, output_filename):
 def main():
     """主执行函数"""
     yesterday = datetime.now() - timedelta(days=1)
-    date_str = yesterday.strftime("%Ym%d") # 注意: 这里的日期格式是 YYYYMMDD
+    date_str = yesterday.strftime("%Y%m%d")
     page_url = f"https://bingwalls.com/china/{date_str}"
     
     print(f"🚀 开始处理日期: {date_str}")
